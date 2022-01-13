@@ -129,10 +129,8 @@ body {
 }
 html,
 body {
+  /* background-color: #010101; */
   position: relative;
-}
-
-.swiper {
 }
 
 .swiper-slide {
@@ -162,7 +160,8 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
-.swiper-slide {
+.swiper-slide div{
+  width:375px;
 }
 
 .swiper {
@@ -170,10 +169,27 @@ body {
   margin-right: auto;
 }
 .swiper-button-next {
-  background-image: url(../img/arrowl.png);
+  background-color: #eee;
+  border-radius: 50%;
+  background-image: url(../img/right.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: 50% 50%;
   right: 5%;
 }
+
+.swiper-button-next::after {
+  display: none;
+}
 .swiper-button-prev {
-  background-image: url(../img/arrowr.png);
+  background-color: #eee;
+  background-image: url(../img/left.svg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 50% 50%;
+  background-position: 40% 50%;
   left: 5%;
+}
+.swiper-button-prev::after {
+  display: none;
 }

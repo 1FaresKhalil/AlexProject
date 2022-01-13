@@ -116,18 +116,26 @@
 
     <div class="position-relative my-5">
       <div class="swiper container mySwiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper my-5">
           <div class="swiper-slide">
-            <img src="img/Слой 1.png" alt="" />
+            <div>
+              <img src="img/Слой 1.png" alt="" />
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="img/Слой 1.png" alt="" />
+            <div>
+              <img src="img/Слой 1.png" alt="" />
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="img/Слой 1.png" alt="" />
+            <div>
+              <img src="img/Слой 1.png" alt="" />
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="img/Слой 1.png" alt="" />
+            <div>
+              <img src="img/Слой 1.png" alt="" />
+            </div>
           </div>
         </div>
 
@@ -156,6 +164,24 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          992: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 30,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 30,
+          },
+          300:{
+            slidesPerView: 3,
+            spaceBetweenSlides: 30,
+          },
+          200:{
+            slidesPerView: 2,
+            spaceBetweenSlides: 30,
+          }
         },
       });
     </script>
