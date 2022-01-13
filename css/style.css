@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* header */
+.navbar ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #010101;
+  font-weight: 600;
+}
+.header {
+  height: 100vh;
+  background-image: url(../img/brown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .social img {
+  margin: 0 11px;
+}
+.header .form {
+  width: 360px;
+  height: 334px;
+  border-radius: 5px;
+  background-color: #ffffff94;
+  border: 3px solid #d2d2d2;
+  text-align: center;
+}
+.form h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #030303;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.form span {
+  color: #b32632;
+}
+.form p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #030303;
+  font-weight: 250;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.form input {
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  border: 2px solid #ffffff;
+  padding: 15px 20px;
+}
+.form .btn {
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  background-color: #b32632;
+  padding: 15px 20px;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1.732px 0px rgba(5, 6, 6, 0.5));
+}
+@media (max-width: 992px) {
+  .social img {
+    width: 53px;
+  }
+}
+@media (max-width: 768px) {
+  .parent-row {
+    justify-content: center !important;
+  }
+  .logo-img {
+    width: 300px;
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+  }
+  .social img {
+    width: 50px;
+  }
+}
+@media (max-width: 420px) {
+  .header .form {
+    border: 0px;
+    padding-top: 2rem;
+  }
+  .form input {
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+  }
+  .form .btn {
+    padding: 10px 20px;
+  }
+  .parent-row {
+    justify-content: center !important;
+  }
+  .logo-img {
+    width: 180px;
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+  }
+  .social img {
+    width: 30px;
+  }
+}
+html,
+body {
+  position: relative;
+}
+
+.swiper {
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.swiper-slide {
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-next {
+  background-image: url(../img/arrowl.png);
+  right: 5%;
+}
+.swiper-button-prev {
+  background-image: url(../img/arrowr.png);
+  left: 5%;
+}

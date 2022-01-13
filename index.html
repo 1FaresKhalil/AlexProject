@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >О НАС</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ГАЛЕРЕЯ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">КАТАЛОГ ПОТОЛКОВ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Виды потолков</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="img/more.png" alt="" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-content container">
+        <div
+          class="parent-row row align-items-center justify-content-between gx-5"
+        >
+          <div class="logo col-md-6 d-flex flex-column align-items-center mt-5">
+            <div class="logo-img">
+              <img class="img-fluid" src="img/logo.png" alt="" />
+            </div>
+            <div class="mt-4 social">
+              <img src="img/gmail.png" alt="" />
+              <img src="img/insta.png" alt="" />
+              <img src="img/telegram.png" alt="" />
+              <img src="img/viber.png" alt="" />
+            </div>
+          </div>
+          <div class="form col-md-6 mt-4 mt-lg-0">
+            <h2>ВЫЕЗД ЗАМЕРЩИКА <span class="d-block">БЕСПЛАТНО</span></h2>
+            <p>Введите Ваши данные, мы Вам перезвоним:</p>
+            <form action="" class="d-flex flex-column align-items-center">
+              <input
+                type="email"
+                class="form-control w-75"
+                id="exampleFormControlInput1"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="email"
+                class="form-control w-75"
+                id="exampleFormControlInput1"
+                placeholder="Ваш номер телефона"
+              />
+              <button class="btn w-75">ОСТАВИТЬ ЗАЯВКУ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- slider -->
+
+    <div class="position-relative my-5">
+      <div class="swiper container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/Слой 1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Слой 1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Слой 1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Слой 1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- slider end -->
+    <!-- scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
